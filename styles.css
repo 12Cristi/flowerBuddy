@@ -1,0 +1,144 @@
+:root {
+	--primary-bg-color: #df2222;
+	--content-spacing: 0px 80px 0px 80px;
+	--primary-font-color: #1f1f1f;
+	--default-line-height: 1rem;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	color: var(--primary-font-color);
+	font-family: "Mulish", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+.app-header {
+	padding: var(--content-spacing);
+	line-height: var(--default-line-height);
+	height: 90vh;
+}
+
+.header-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	.logo {
+		max-width: 226px;
+		align-self: flex-end;
+	}
+}
+
+.header-left-area {
+	width: 527.5px;
+}
+
+.header-left-area input {
+	box-sizing: border-box;
+	height: 40px;
+	width: 347px;
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid;
+}
+
+.header-left-area input:focus {
+	border-color: #1f1f1f;
+	opacity: 0.4;
+}
+
+.header-right-area {
+	width: 526px;
+}
+
+.header-right-area-buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 36px;
+}
+
+.action-section {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 0 10px;
+	gap: 6px;
+	align-items: center;
+
+	img {
+		font-weight: 400;
+		width: 1rem;
+		height: 1rem;
+	}
+}
+
+.navbar-entries {
+	height: 56px;
+	padding: 10px 0 10px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.bouquets,
+	.arrangements,
+	.events,
+	.care {
+		flex-basis: 150px;
+	}
+
+	.plants {
+		flex-basis: 250px;
+	}
+}
+
+.nav-item {
+	cursor: pointer;
+}
+
+.nav-item > .dropdown-menu-entries {
+	display: none;
+}
+
+.nav-item:hover > .dropdown-menu-entries {
+	display: block;
+	list-style: none;
+	text-decoration: none;
+	margin-top: 7px;
+
+	a {
+		text-decoration: none;
+	}
+
+	li {
+		margin-top: 7px;
+	}
+}
+
+footer {
+	padding: var(--content-spacing);
+	line-height: var(--default-line-height);
+	display: flex;
+	opacity: 0.4;
+	align-items: center;
+	position: sticky;
+
+	.copyright {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.contact{
+		flex: 1;		
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+
+		img {
+			width: 44px;
+			height: 45px;
+		}
+	}
+}
