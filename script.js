@@ -1,10 +1,12 @@
 let navItems = [".bouquets", ".arrangements", ".plants", ".events", ".care"];
+const loginBtn = document.querySelector(".login-dialog");
+const loginMenu = document.querySelector(".login-menu");
 
 function getClick(selector) {
 	const trigger = document.querySelector(`${selector} > a`);
 	const list = document.querySelector(`${selector} > .dropdown-menu-entries`);
 
-	trigger.addEventListener("mouseover", (event) => {
+	trigger.addEventListener("mouseover", () => {
 		if (list.style.display === "none" || list.style.display === "") {
 			list.style.display = "block";
 			list.style.listStyle = "none";
@@ -23,7 +25,6 @@ function getClick(selector) {
 		}
 	});
 
-	// Click outside event
 	window.addEventListener("mouseover", (event) => {
 		if (!list.contains(event.target) && event.target !== trigger) {
 			list.style.display = "none";
@@ -34,3 +35,18 @@ function getClick(selector) {
 navItems.forEach((nav) => {
 	getClick(nav);
 });
+
+function loginDialog() {
+	loginMenu.classList.toggle("open");
+}
+
+function closeDialog() {
+	loginMenu.classList.remove("open");
+}
+
+function closeDialogViaBtn() {
+	const closeButton = document.querySelector(".close-btn");
+	closeButton.addEventListener("click", () => {
+		loginMenu.classList.remove("open");
+	});
+}

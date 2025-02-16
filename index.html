@@ -27,10 +27,25 @@
                         <img src="./assets/search.svg" alt="search-image">
                         <p>Cauta</p>
                     </div>
-                    <div class="action-section">
-                        <img src="./assets/Vector (2).svg " alt="login-image">
+                    <div onclick="loginDialog()" class="action-section login-dialog">
+                        <img src="./assets/Vector (2).svg" alt="login-image">
                         <p>Login</p>
+                        <div class="login-menu">
+                            <div class="login-title">
+                                <p>Alege o optiune de autentificare
+                                    <span class="close-btn" onclick="closeDialogViaBtn()">&times;</span>
+                                </p>
+                            </div>
+                            <button class="standard-login">Autentifica-te cu e-mail si parola</button>
+                            <button class="google-login">Conecteaza-te cu Google
+                                <img src="./assets/google_icon.svg" alt="google-icon">
+                            </button>
+                            <button class="facebook-login">Conecteaza-te cu Facebook
+                                <img src="./assets/facebook_icon_blue.svg" alt="facebook-icon">
+                            </button>
+                        </div>
                     </div>
+
                     <div class="action-section">
                         <img src="assets/cart.svg" alt="cart-mage">
                         <p>Cos</p>
