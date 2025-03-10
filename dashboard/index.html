@@ -11,8 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="../dashboard/styles.css">
+    <script defer src="../dashboard/script.js"></script>
 
 <body>
     <header class="app-header">
@@ -20,34 +20,58 @@
             <div class="header-left-area">
                 <input id="header-input" type="text" placeholder="Alege-ti localitatea pentru livrare">
             </div>
-            <img class="logo" src="./assets/Logo.svg" alt="flowerBuddy-picture">
+            <img class="logo" src="../assets/Logo.svg" alt="flowerBuddy-picture">
             <div class="header-right-area">
                 <div class="header-right-area-buttons">
                     <div class="action-section">
-                        <img src="./assets/search.svg" alt="search-image">
+                        <img src="../assets/search.svg" alt="search-image">
                         <p>Cauta</p>
                     </div>
-                    <div onclick="loginDialog()" class="action-section login-dialog">
-                        <img src="./assets/Vector (2).svg" alt="login-image">
+                    <div class="action-section login-dialog">
+                        <img src="../assets/Vector (2).svg" alt="login-image">
                         <p>Login</p>
                         <div class="login-menu">
                             <div class="login-title">
-                                <p>Alege o optiune de autentificare
-                                    <span class="close-btn" onclick="closeDialogViaBtn()">&times;</span>
+                                <p class="user-login">Alege o optiune de autentificare
+                                    <span class="close-btn">&times;</span>
                                 </p>
                             </div>
-                            <button class="standard-login">Autentifica-te cu e-mail si parola</button>
-                            <button class="google-login">Conecteaza-te cu Google
-                                <img src="./assets/google_icon.svg" alt="google-icon">
+                            <div class="separator"></div>
+                            <button class="standard-login">
+                                Autentifica-te cu e-mail si parola
                             </button>
-                            <button class="facebook-login">Conecteaza-te cu Facebook
-                                <img src="./assets/facebook_icon_blue.svg" alt="facebook-icon">
+                            <div class="email-auth">
+                                <div class="email-auth-title">
+                                    <p>Autentifica-te cu e-mail si parola</p>
+                                </div>
+                                <div class="email-inputs">
+                                    <input type="text" placeholder="Ex: example@mail.com">
+                                    <input type="password" placeholder="Adauga-ti parola">
+                                    <p class="forgot-password">Mi-am uitat parola</p>
+                                </div>
+                                <div class="separator"></div>
+                                <div class="user-login">
+                                    <button class="back-button">Inapoi</button>
+                                    <button class="auth-button">Autentificare</button>
+                                </div>
+                                <div class="register">
+                                    <p>Nu ai cont? Inregistreaza-te</p>
+                                </div>
+                            </div>
+                            <button class="google-login"
+                                onclick="window.location.href = 'https://accounts.google.com/';">Conecteaza-te cu Google
+                                <img src="../assets/google_icon.svg" alt="google-icon">
+                            </button>
+                            <button class="facebook-login"
+                                onclick="window.location.href= 'https://www.facebook.com/login';">Conecteaza-te cu
+                                Facebook
+                                <img src="../assets/facebook_icon_blue.svg" alt="facebook-icon">
                             </button>
                         </div>
                     </div>
 
                     <div class="action-section">
-                        <img src="assets/cart.svg" alt="cart-mage">
+                        <img src="../assets//cart.svg" alt="cart-mage">
                         <p>Cos</p>
                     </div>
                 </div>
@@ -120,22 +144,44 @@
         </nav>
         </div>
     </header>
+    <div class="main-content">
+        <div class="main-content-title">
+            <h1>FlowerBuddy</h1>
+            <div>Inveseliti ziua cuiva cu Flower Buddy</div>
+        </div>
+        <div class="main-content-images">
+            <div class="roses-images">
+                <img src="../assets/trandafiri.svg" alt="white roses">
+                <div>Buchete trandafiri</div>
+            </div>
+            <div class="roses-images">
+                <img src="../assets/mix_flori.svg" alt="white roses">
+                <div>Mix Flori</div>
+            </div>
+            <div class="roses-images">
+                <img src="../assets/trandafiri.svg" alt="white roses">
+                <div>Mix trandafiri</div>
+            </div>
+
+
+        </div>
+    </div>
     <footer>
         <div class="copyright">
             <p>Copyright © Flower Buddy. Toate drepturile rezervate. Reg. Com. J01/1289/2024, CIF: RO32145687</p>
         </div>
         <div class="contact">
             <div class="contact-ytube">
-                <img src="./assets/youtube.svg" alt="youtube-image">
+                <img src="../assets/youtube.svg" alt="youtube-image">
             </div>
             <div class="contact-facebook">
-                <img src="./assets/facebook.svg" alt="facebook-image">
+                <img src="../assets/facebook.svg" alt="facebook-image">
             </div>
             <div>
-                <img src="./assets/instagram.svg" alt="instagram-image">
+                <img src="../assets/instagram.svg" alt="instagram-image">
             </div>
             <div class="pinterest">
-                <img src="./assets/pinterest.svg" alt="pinterest-image">
+                <img src="../assets/pinterest.svg" alt="pinterest-image">
             </div>
         </div>
 

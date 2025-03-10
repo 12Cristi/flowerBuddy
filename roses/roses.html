@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Buddy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../dashboard/script.js">
+  <link rel="stylesheet" href="../roses/roses.css">
+  <script defer src="../dashboard/script.js"></script>
+  <script defer src="../roses/roses.js"></script>
+
+<body>
+  <header class="app-header">
+    <div class="header-title">
+      <div class="header-left-area">
+        <input id="header-input" type="text" placeholder="Alege-ti localitatea pentru livrare">
+      </div>
+      <img class="logo" src="../assets/Logo.svg" alt="flowerBuddy-picture">
+      <div class="header-right-area">
+        <div class="header-right-area-buttons">
+          <div class="action-section">
+            <img src="../assets/search.svg" alt="search-image">
+            <p>Cauta</p>
+          </div>
+          <div class="action-section login-dialog">
+            <img src="../assets/Vector (2).svg" alt="login-image">
+            <p>Login</p>
+            <div class="login-menu">
+              <div class="login-title">
+                <p class="user-login">Alege o optiune de autentificare
+                  <span class="close-btn">&times;</span>
+                </p>
+              </div>
+              <div class="separator"></div>
+              <button class="standard-login">
+                Autentifica-te cu e-mail si parola
+              </button>
+              <div class="email-auth">
+                <div class="email-auth-title">
+                  <p>Autentifica-te cu e-mail si parola</p>
+                </div>
+                <div class="email-inputs">
+                  <input type="text" placeholder="Ex: example@mail.com">
+                  <input type="password" placeholder="Adauga-ti parola">
+                  <p class="forgot-password">Mi-am uitat parola</p>
+                </div>
+                <div class="separator"></div>
+                <div class="user-login">
+                  <button class="back-button">Inapoi</button>
+                  <button class="auth-button">Autentificare</button>
+                </div>
+                <div class="register">
+                  <p>Nu ai cont? Inregistreaza-te</p>
+                </div>
+              </div>
+              <button class="google-login"
+                onclick="window.location.href = 'https://accounts.google.com/';">Conecteaza-te cu Google
+                <img src="../assets/google_icon.svg" alt="google-icon">
+              </button>
+              <button class="facebook-login"
+                onclick="window.location.href= 'https://www.facebook.com/login';">Conecteaza-te cu
+                Facebook
+                <img src="../assets/facebook_icon_blue.svg" alt="facebook-icon">
+              </button>
+            </div>
+          </div>
+          <div class="action-section">
+            <img src="../assets/cart.svg" alt="cart-mage">
+            <p>Cos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-entries">
+        <div class="nav-item bouquets">
+          <a class="nav-link">
+            Buchete flori
+          </a>
+          <ul class="dropdown-menu-entries">
+            <li><a class="dropdown-item" href="#">Buchete trandafiri</a></li>
+            <li><a class="dropdown-item" href="#">Buchete bujori</a></li>
+            <li><a class="dropdown-item" href="#">Buchete lalele</a></li>
+          </ul>
+        </div>
+        <div class="nav-item arrangements">
+          <a class="nav-link">
+            Aranjamente florale
+          </a>
+          <ul class="dropdown-menu-entries">
+            <li><a class="dropdown-item" href="#">Cutii flori</a></li>
+            <li><a class="dropdown-item" href="#">Cutii flori uscate</a></li>
+            <li><a class="dropdown-item" href="#">Aranjamente dulciuri</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item plants">
+          <a class="nav-link">
+            Plante interior
+          </a>
+          <ul class="dropdown-menu-entries">
+            <li><a class="dropdown-item" href="#">Plante decorative prin flori</a></li>
+            <li><a class="dropdown-item" href="#">Plante decorative prin frunze</a></li>
+          </ul>
+        </div>
+        <div class="nav-item events">
+          <a class="nav-link">
+            Evenimente
+          </a>
+          <ul class="dropdown-menu-entries">
+            <li><a class="dropdown-item" href="#">Botez</a></li>
+            <li><a class="dropdown-item" href="#">Nunta</a></li>
+            <li><a class="dropdown-item" href="#">Festivitati scolare</a></li>
+            <li><a class="dropdown-item" href="#">Funerare</a></li>
+          </ul>
+        </div>
+        <div class="nav-item care">
+          <a class="nav-link">
+            Ingrijiri plante
+          </a>
+          <ul class="dropdown-menu-entries">
+            <li><a class="dropdown-item" href="#">Solutii tratament</a></li>
+            <li><a class="dropdown-item" href="#">Solutii nutritive</a></li>
+            <li><a class="dropdown-item" href="#">Ustensile gradinarit</a></li>
+          </ul>
+        </div>
+        <div class="nav-item flowers">
+          <a class="nav-link" type="button">
+            Flori artificiale
+          </a>
+        </div>
+        <div class="nav-item flowers">
+          <a class="nav-link">
+            Flori uscate
+          </a>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <section class="rose-section">
+    <div class="banner">BUCHETE TRANDAFIRI
+    </div>
+    <div class="main-content">
+      <div class="content">
+        <img src="../assets/cute_couple.svg" alt="cute-couple-kissing">
+      </div>
+      <div class="rose-content">
+        <div class="rose-content-title">Buchet de trandafiri albi</div>
+        <div class="rose-rating">
+          <img src="../assets/Star 1.svg" alt="rating-start">
+          <img src="../assets/Star 1.svg" alt="rating-start">
+          <img src="../assets/Star 1.svg" alt="rating-start">
+          <img src="../assets/Star 1.svg" alt="rating-start">
+          <img src="../assets/Star 1.svg" alt="rating-start">
+
+        </div>
+        <div class="rose-price">255.99 RON</div>
+        <div class="infobox">
+          <strong>
+            Transport gratuit la produse in valaore de 300 lei
+          </strong>
+        </div>
+        <button>Comanda acum</button>
+        <div class="rose-description">
+          <p>Buchete de trandafiri elegante și rafinate, perfecte pentru orice ocazie specială</p>
+          <p>Alege dintr-o selecție variată de trandafiri proaspeți, disponibili într-o gamă de culori simbolice: roșii
+            pentru dragoste pasională, albi pentru puritate și eleganță, galbeni pentru prietenie și optimism, și roz
+            pentru admirație și recunoștință</p>
+          <p>
+            Fiecare buchet este aranjat cu grijă de florari pricepuți, oferind un cadou de neuitat, ideal pentru
+            aniversări, zile de naștere, nunți sau pentru a surprinde pe cineva drag. Livrare rapidă și garanția
+            prospețimii florilor!
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="separator"></div>
+    <div class="copyright">
+      <p>Copyright © Flower Buddy. Toate drepturile rezervate. Reg. Com. J01/1289/2024, CIF: RO32145687</p>
+    </div>
+    <div class="contact">
+      <div class="contact-ytube">
+        <img src="../assets/youtube.svg" alt="youtube-image">
+      </div>
+      <div class="contact-facebook">
+        <img src="../assets/facebook.svg" alt="facebook-image">
+      </div>
+      <div>
+        <img src="../assets/instagram.svg" alt="instagram-image">
+      </div>
+      <div class="pinterest">
+        <img src="../assets/pinterest.svg" alt="pinterest-image">
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
